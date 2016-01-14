@@ -85,7 +85,7 @@
 							<li><a href="#about">About</a></li>
 							<li><a href="#team">The Team</a></li>
 							<li><a href="#contact-maps">Contact Us</a></li>
-							<li><a href="#footer">For Owners</a></li>
+							<li><a href="for_owners.html">For Owners</a></li>
 							
 							<!-- HEADER ACTION BUTTON -->
 							<li class="header-action-button"><a href="#" class="btn btn-primary">Stay With Us</a></li>
@@ -106,7 +106,7 @@
 
 					<!-- IMAGE BACKGROUND -->
 					<div class="section-background-image parallax" data-stellar-ratio="0.4">
-						<img src="images/backgrounds/fs-bg-fullscreen.jpg" alt="" style="opacity: 0.3;">
+						<img src="images/backgrounds/bg-oldtown-winter.jpg" alt="" style="opacity: 0.3;">
 					</div>
 
 					<!-- VIDEO BACKGROUND -->
@@ -139,13 +139,13 @@
 
 										<h1 class="hero-title">FamilyStay Tallinn</h1>
 
-										<p class="hero-tagline">Travelling with kids should be fun</p>
+										<p class="hero-tagline">Family-friendly apartments in Tallinn</p>
 
 									</div>
 
 									<p class="hero-buttons text-center">
 										<a href="#portfolio" class="btn btn-lg btn-primary">Stay with us</a>
-										<a href="#footer" class="btn btn-lg btn-default">Rent with us</a>
+										<a href="for_owners.html" class="btn btn-lg btn-default">Host with us</a>
 									</p>
 
 								</div>
@@ -332,7 +332,7 @@
 
 				<div class="container">
 
-					<h2 class="section-heading text-center">Trusted by Families</h2>
+					<h2 class="section-heading text-center">Trusted by Hundreds of Families</h2>
 
 					<div class="sponsors-row" data-animation="bounceIn">
 						<img src="images/contents/airbnb-superhost.png" alt="" width="15%">
@@ -383,14 +383,17 @@
 
 
 
-			<!-- CONTACT + MAPS
+
+            
+            
+            			<!-- GOOGLE MAPS
 			================================= -->
-			<section id="contact-maps" class="contact-maps-section section">
+			<section id="contact-maps" class="maps-section section">
 
-				<div class="section-background">
+				<div class="container-fluid maps-row">
 
-					<!-- MAPS BACKGROUND -->
-					<div class="section-background-maps">
+					<!-- MAPS IMAGE -->
+					<div class="maps-image" data-animation="fadeIn">
 						<div id="gmap"></div>
 				
 						<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
@@ -403,26 +406,22 @@
 								lat : 59.449873,
 								lon : 24.734261,
 								animation : google.maps.Animation.DROP,
-                                html : "Vibu 14, Tallinn",
-                                clickable : false,
+                                html : "<strong><a href='https://www.airbnb.com/rooms/8349723'>3BR in Kalamaja Park</a></strong><br/>Vibu 14, Tallinn",
 							}, {
 								lat : 59.444339,
 								lon : 24.741831,
 								animation : google.maps.Animation.DROP,
 								html : "Soo 1b, Tallinn",
-								clickable : false,
 							}, {
 								lat : 59.440315,
 								lon : 24.747860,
 								animation : google.maps.Animation.DROP,
 								html : "Pikk 40, Tallinn",
-								clickable : false,
 							}, {
 								lat : 59.435501, 
 								lon : 24.748579,
 								animation : google.maps.Animation.DROP,
 								html : "Väike-Karja 9, Tallinn",
-								clickable : false,
 							}],
 							map_options : {
 								scrollwheel : false,
@@ -432,40 +431,48 @@
 									style : google.maps.ZoomControlStyle.SMALL,
 								},
 								zoom : 14,
-								set_center : [ 59.443339, 24.781831 ], // adjust the "lon" attribute of your first location
+							},
+							styles : {
+								// source: https://snazzymaps.com/style/132/light-gray
+								'custom' : [{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},{"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#b3b3b3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}],
 							},
 						};
 						</script>
 					</div>
-				</div>
 
-				<div class="container">
-					<div class="contact-maps-row row">
-						<div class="col-md-7 col-md-offset-5">
+					<!-- MAPS TEXT -->
+					<div class="maps-text" data-animation="fadeIn">
 
-							<div class="contact-maps-box" data-animation="fadeIn">
+						<div class="maps-text-inner">
 
-								<h2 class="section-heading">Contact Us</h2>
-								<p>Drop us a line.</p>
+							<h2 class="section-heading text-left">Made with <span class="fa fa-heart text-primary"></span> in Kuta, Bali</h2>
 
-								<div class="row">
-									<address class="col-sm-7">
-										<strong>FamilyStay OÜ</strong>
-										<ul class="fa-ul">
-											<li><i class="fa-li fa fa-envelope"></i>E-mail: piret.familystay@gmail.com</li>
-											<li><i class="fa-li fa fa-phone"></i>Phone: +372 53 022 599</li>
-										</ul>										
-									</address>
-								</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat arcu ut orci porta, eget porttitor felis suscipit. Sed a nisl ullamcorper, tempus augue at, rutrum lacus. Duis et turpis eros.</p>
 
+							<div class="row">
+								<address class="col-sm-6">
+									<strong>Familystay OÜ</strong>
+									<ul class="fa-ul">
+                                        <li><i class="fa-li fa fa-envelope"></i>E-mail: piret.familystay@gmail.com</li>
+                                        <li><i class="fa-li fa fa-phone"></i>Phone: +372 53 022 599</li>
+									</ul>										
+								</address>
 							</div>
 							
 						</div>
+
 					</div>
+
 				</div>
 
 			</section>
 
+            
+            
+            
+            
+            
+            
 			<!-- CLOSING
 			================================= -->
 			<section id="closing" class="closing-section section-dark section">
@@ -483,7 +490,7 @@
 
 					<h3 class="closing-shout">Have an apartment in Tallinn suitable for families?</h3>
 
-					<div class="closing-buttons" data-animation="tada"><a href="#hero" class="anchor-link btn btn-lg btn-primary">Put it to work with us</a></div>
+					<div class="closing-buttons" data-animation="tada"><a href="for_owners.html" class="anchor-link btn btn-lg btn-primary">Put it to work with us</a></div>
 
 				</div>
 
