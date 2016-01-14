@@ -13,9 +13,8 @@
 		
 		<!-- BASIC INFO -->
 		<title>FamilyStay - family-friendly apartments in Tallinn</title>
-		<meta name="author" content="David Rozando">
-		<meta name="keywords" content="responsive, parallax, bootstrap, html5 template, one page, landing page">
-		<meta name="description" content="FamilyStay - family-friendly apartments in Tallinn">
+		<meta name="keywords" content="family, apartment, tallinn, stay, accomodation, friendly, airbnb, booking, rent">
+        <meta name="description" content="FamilyStay - family-friendly apartments in Tallinn">
 
 		<!-- FAVICONS -->
 		<link rel="icon" href="images/favicons/favicon.ico">
@@ -44,7 +43,17 @@
 		<!-- <link id="color-css" rel="stylesheet" href="css/colors/green.css"> -->
 		<!-- <link id="color-css" rel="stylesheet" href="css/colors/turquoise.css"> -->
 		<!-- <link id="color-css" rel="stylesheet" href="css/colors/blue.css"> -->
-		
+		        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-72404025-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        
 	</head>
 
 	<body class="enable-animations">
@@ -68,7 +77,7 @@
 						</button>
 
 						<!-- HEADER LOGO -->
-						<a class="navbar-logo navbar-brand anchor-link" href="#hero">
+						<a class="navbar-logo navbar-brand anchor-link" href="index.html#hero">
 							<img src="images/logos/white-header-logo.png" srcset="images/logos/white-header-logo@2x.png 2x" alt="Drew">
 						</a>
 
@@ -79,14 +88,13 @@
 						<!-- NAVIGATION LINKS -->
 						<ul id="header-nav" class="nav navbar-nav">
 							
-							<li><a href="#hero" class="hidden">Top</a></li>
+							<li><a href="index.html#hero">Home</a></li>
 
-							<li><a href="#benefits">Benefits</a></li>
 							<li><a href="index.html#portfolio">Apartments</a></li>
 							<li><a href="index.html#about">About</a></li>
-							<li><a href="index.html#team">The Team</a></li>
-							<li><a href="#contact">Contact Us</a></li>
-							<li><a href="index.html">Home</a></li>
+							<!-- <li><a href="#team">The Team</a></li> -->
+                            <li><a href="#contact">Contact Us</a></li>
+							<li class="current"><a href="#benefits">For Owners</a></li>
 							
 							<!-- HEADER ACTION BUTTON -->
 							<li class="header-action-button"><a href="#contact" class="btn btn-primary">Host With Us</a></li>
@@ -98,29 +106,6 @@
 				</div>
 
 			</header>
-
- 			<!-- HEADLINE
-			================================= -->
-			<section id="headline" class="headline-section section-gray section">
-
-				<div class="container">
-
-					<h2 class="section-heading text-center hidden">Tagline</h2>
-
-					<div class="row">
-						<div class="col-md-10 col-md-offset-1">
-
-							<p class="headline-text">
-								Meie haldame korterit algusest peale, alates sisustamisest ja piltide tegemisest. Haldame hindu, suhtleme klientidega, majandame korterit, nii et omanik saaks rahulikult passiivset tulu teenida.
-							</p>
-
-						</div>
-					</div>
-
-				</div>
-
-			</section>
-           
             
 
 			<!-- BENEFITS
@@ -198,140 +183,6 @@
 				</div>
 
 			</section>
-
-			<!-- HOW IT WORKS
-			================================= -->
-			<section id="how-it-works" class="how-it-works-section section">
-
-				<div class="container-fluid">
-					
-					<h2 class="section-heading text-center">How it Works</h2>
-
-					<div class="hiw-row row">
-
-						<!-- HOW IT WORKS - ITEM 1 -->
-						<div class="col-sm-6 col-md-3" data-animation="fadeIn">
-							<div class="hiw-item">
-								<img class="hiw-item-picture" src="images/contents/hiw-item-1.jpg" alt="">
-								<div class="hiw-item-text">
-									<span class="hiw-item-icon">1</span>
-									<h4 class="hiw-item-title">Sisustamine, pildid</h4>
-									<p class="hiw-item-description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Vivamus eu sollicitudin lacus, nec ultricies lorem.</p>
-								</div>
-							</div>
-						</div>
-
-						<!-- HOW IT WORKS - ITEM 2 -->
-						<div class="col-sm-6 col-md-3" data-animation="fadeIn">
-							<div class="hiw-item even">
-								<img class="hiw-item-picture" src="images/contents/hiw-item-2.jpg" alt="">
-								<div class="hiw-item-text">
-									<span class="hiw-item-icon">2</span>
-									<h4 class="hiw-item-title">Klientide leidmine</h4>
-									<p class="hiw-item-description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Vivamus eu sollicitudin lacus, nec ultricies lorem.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="hidden-md hidden-lg clear"></div>
-
-						<!-- HOW IT WORKS - ITEM 3 -->
-						<div class="col-sm-6 col-md-3" data-animation="fadeIn">
-							<div class="hiw-item">
-								<img class="hiw-item-picture" src="images/contents/hiw-item-3.jpg" alt="">
-								<div class="hiw-item-text">
-									<span class="hiw-item-icon">3</span>
-									<h4 class="hiw-item-title">Korteri majandamine</h4>
-									<p class="hiw-item-description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Vivamus eu sollicitudin lacus, nec ultricies lorem.</p>
-								</div>
-							</div>
-						</div>
-
-						<!-- HOW IT WORKS - ITEM 4 -->
-						<div class="col-sm-6 col-md-3" data-animation="fadeIn">
-							<div class="hiw-item even">
-								<img class="hiw-item-picture" src="images/contents/hiw-item-4.jpg" alt="">
-								<div class="hiw-item-text">
-									<span class="hiw-item-icon">4</span>
-									<h4 class="hiw-item-title">Raha omanikule</h4>
-									<p class="hiw-item-description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Vivamus eu sollicitudin lacus, nec ultricies lorem.</p>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-
-			</section>
-
-            
-            <!-- FAQ
-			================================= -->
-			<section id="faq" class="faq-section section">
-
-				<div class="container">
-
-					<h2 class="section-heading text-center">Frequently Asked Questions</h2>
-
-					<div class="faq-row row">
-
-						<div class="col-md-6">
-							<div class="faq-item">
-								<span class="faq-item-icon fa fa-question-circle"></span>
-								<h4 class="faq-item-heading">How do I get started?</h4>
-								<div class="faq-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat arcu ut orci porta, eget porttitor felis suscipit. Sed a nisl ullamcorper, tempus augue at, rutrum lacus. Duis et turpis eros.</div>
-							</div>
-						</div>
-
-						<div class="col-md-6">
-							<div class="faq-item">
-								<span class="faq-item-icon fa fa-question-circle"></span>
-								<h4 class="faq-item-heading">What are the requirements?</h4>
-								<div class="faq-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat arcu ut orci porta, eget porttitor felis suscipit. Sed a nisl ullamcorper, tempus augue at, rutrum lacus. Duis et turpis eros.</div>
-							</div>
-						</div>
-
-						<div class="col-md-6">
-							<div class="faq-item">
-								<span class="faq-item-icon fa fa-question-circle"></span>
-								<h4 class="faq-item-heading">Aga mis siis kui see asi juhtub?</h4>
-								<div class="faq-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat arcu ut orci porta, eget porttitor felis suscipit. Sed a nisl ullamcorper, tempus augue at, rutrum lacus. Duis et turpis eros.</div>
-							</div>
-						</div>
-
-						<div class="col-md-6">
-							<div class="faq-item">
-								<span class="faq-item-icon fa fa-question-circle"></span>
-								<h4 class="faq-item-heading">How about the quality?</h4>
-								<div class="faq-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat arcu ut orci porta, eget porttitor felis suscipit. Sed a nisl ullamcorper, tempus augue at, rutrum lacus. Duis et turpis eros.</div>
-							</div>
-						</div>
-
-						<div class="col-md-6">
-							<div class="faq-item">
-								<span class="faq-item-icon fa fa-question-circle"></span>
-								<h4 class="faq-item-heading">How long til I can launch my page?</h4>
-								<div class="faq-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat arcu ut orci porta, eget porttitor felis suscipit. Sed a nisl ullamcorper, tempus augue at, rutrum lacus. Duis et turpis eros.</div>
-							</div>
-						</div>
-
-						<div class="col-md-6">
-							<div class="faq-item">
-								<span class="faq-item-icon fa fa-question-circle"></span>
-								<h4 class="faq-item-heading">How to report issue / feedback?</h4>
-								<div class="faq-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat arcu ut orci porta, eget porttitor felis suscipit. Sed a nisl ullamcorper, tempus augue at, rutrum lacus. Duis et turpis eros.</div>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-
-			</section>
-
-
-
 
             
             
