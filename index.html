@@ -12,7 +12,7 @@
 		
 		<!-- BASIC INFO -->
 		<title>FAMILYSTAY - Family-Friendly Apartments in Tallinn</title>
-		<meta name="keywords" content="family, apartment, tallinn, stay, accomodation, friendly, airbnb, booking, rent, family apartments tallinn">
+		<meta name="keywords" content="family, apartment, tallinn, stay, accomodation, friendly, airbnb, booking, rent, home, family apartments tallinn">
 		<meta name="description" content="Visiting Tallinn with kids? Stay in a cozy and comfortable family apartment in the center of Tallinn.">
 
 		<!-- FAVICONS -->
@@ -94,10 +94,10 @@
 							
 							<li><a href="#hero">Home</a></li>
 
-							<li><a href="#apartments">Apartments</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#team">The Team</a></li>
-							<li><a href="#contact-maps">Contact Us</a></li>
+							<li><a href="#apartments" onclick="ga('send', 'event', 'link', 'click', 'header:Apartments');">Apartments</a></li>
+							<li><a href="#about" onclick="ga('send', 'event', 'link', 'click', 'header:About');">About</a></li>
+							<li><a href="#team" onclick="ga('send', 'event', 'link', 'click', 'header:Team');">The Team</a></li>
+							<li><a href="#contact-maps" onclick="ga('send', 'event', 'link', 'click', 'header:Contact Us');">Contact Us</a></li>
 							<!-- <li><a href="for_owners.html">Host with Us</a></li> -->
 							
 							<!-- HEADER ACTION BUTTON 
@@ -157,8 +157,8 @@
 									</div>
 
 									<p class="hero-buttons text-center">
-										<a href="#apartments" class="btn btn-lg btn-primary">Stay with us</a>
-										<!-- <a href="for_owners.html" class="btn btn-lg btn-default">Host with us</a> -->
+										<a href="#apartments" class="btn btn-lg btn-primary" onclick="ga('send', 'event', 'button', 'click', 'main:See Our Apartments');">See Our Apartments</a>
+										<a href="#contact-maps" class="btn btn-lg btn-default" onclick="ga('send', 'event', 'button', 'click', 'main:Become a Host');">Become a Host</a>
 									</p>
 
 								</div>
@@ -192,7 +192,7 @@
 								<div class="portfolio-item-text">
 									   <h4 class="portfolio-item-title">1BR Kalamaja Soo Street</h4>
 									<p class="portfolio-item-description">Sunny apartment just 5 minutes walk from Old Town. Kid-friendly inner yard.</p>
-                                    <p class="portfolio-item-description"><a href="https://www.airbnb.com/rooms/9132551" target="_blank" class="btn btn-primary">Check Availability</a></p>
+                                    <p class="portfolio-item-description"><a href="https://www.airbnb.com/rooms/9132551" target="_blank" class="btn btn-primary" onclick="ga('send', 'event', 'button', 'click', 'apartments:Check Availability - Soo');">Check Availability</a></p>
 								</div>
 							</div>
 						</div>
@@ -205,7 +205,7 @@
 								<div class="portfolio-item-text">
 									<h4 class="portfolio-item-title">1BR Old Town Pikk Street</h4>
 									<p class="portfolio-item-description">Cozy apartment in the middle of Old Town. Ideally located for sights, restaurants etc.</p>
-                                    <p class="portfolio-item-description"><a href="https://www.airbnb.com/rooms/6923022" target="_blank" class="btn btn-primary">Check Availability</a></p>
+                                    <p class="portfolio-item-description"><a href="https://www.airbnb.com/rooms/6923022" target="_blank" class="btn btn-primary" onclick="ga('send', 'event', 'button', 'click', 'apartments:Check Availability - Pikk');">Check Availability</a></p>
 								</div>
 							</div>
 						</div>
@@ -220,7 +220,7 @@
 								<div class="portfolio-item-text">
 									<h4 class="portfolio-item-title">2BR Old Town Väike-Karja Street</h4>
 									<p class="portfolio-item-description">Spacious apartment with splendid views. Perfect location next to city center.</p>
-                                    <p class="portfolio-item-description"><a href="https://www.airbnb.com/rooms/8988450" target="_blank" class="btn btn-primary">Check Availability</a></p>
+                                    <p class="portfolio-item-description"><a href="https://www.airbnb.com/rooms/8988450" target="_blank" class="btn btn-primary" onclick="ga('send', 'event', 'button', 'click', 'apartments:Check Availability - Väike-Karja');">Check Availability</a></p>
 
 								</div>
 							</div>
@@ -234,7 +234,7 @@
 								<div class="portfolio-item-text">
 									<h4 class="portfolio-item-title">3BR Kalamaja Vibu Street</h4>
 									<p class="portfolio-item-description">Spacious and quiet family apartment right at the Kalamaja park.</p>
-                                    <p class="portfolio-item-description"><a href="https://www.airbnb.com/rooms/8349723" target="_blank" class="btn btn-primary">Check Availability</a></p>
+                                    <p class="portfolio-item-description"><a href="https://www.airbnb.com/rooms/8349723" target="_blank" class="btn btn-primary" onclick="ga('send', 'event', 'button', 'click', 'apartments:Check Availability - Vibu');">Check Availability</a></p>
 
 								</div>
 							</div>
@@ -285,7 +285,7 @@
 								<li>
 									<span class="icon-list-icon fa fa-child" data-animation="bounceIn"></span>
 									<h4 class="icon-list-title">All you need</h4>
-									<p>Our apartments are equipped with toys, utensils and other stuff your kids need, so you don't have to bring that extra luggage when you travel.</p>
+									<p>Our apartments are equipped with toys, utensils, high seat, baby cot and other things your kids need, so you don't have to bring that extra luggage when you travel.</p>
 								</li>
 							</ul>
 						</div>
@@ -361,7 +361,7 @@
 					<h2 class="section-heading text-center">Trusted by Hundreds of Families</h2>
 
 					<div class="sponsors-row" data-animation="bounceIn">
-						<a href="https://www.airbnb.com/superhost" target="_blank"><img src="images/contents/airbnb-superhost.png" alt="Airbnb Superhost program" width="15%"></a>
+						<a href="https://www.airbnb.com/superhost" target="_blank" onclick="ga('send', 'event', 'link', 'click', 'testimonials:superhost');"><img src="images/contents/airbnb-superhost.png" alt="Airbnb Superhost program" width="15%"></a>
 					</div>
 
 					<div class="testimonial-row row">
@@ -432,22 +432,22 @@
 								lat : 59.449873,
 								lon : 24.734261,
 								animation : google.maps.Animation.DROP,
-                                html : "<strong><a href='https://www.airbnb.com/rooms/8349723' target='_blank'>3BR Kalamaja Vibu Street</a></strong><br/>Vibu 14, Tallinn",
+                                html : "<strong><a href='https://www.airbnb.com/rooms/8349723' target='_blank' onclick='ga(/'send/', /'event/', /'button/', /'click/', /'apartments:maps - Vibu/');'>3BR Kalamaja Vibu Street</a></strong><br/>Vibu 14, Tallinn",
 							}, {
 								lat : 59.444339,
 								lon : 24.741831,
 								animation : google.maps.Animation.DROP,
-                                html : "<strong><a href='https://www.airbnb.com/rooms/9132551' target='_blank'>1BR Kalamaja Soo Street</a></strong><br/>Soo 1B, Tallinn",
+                                html : "<strong><a href='https://www.airbnb.com/rooms/9132551' target='_blank' onclick='ga(/'send/', /'event/', /'button/', /'click/', /'apartments:maps - Soo/');'>1BR Kalamaja Soo Street</a></strong><br/>Soo 1B, Tallinn",
 							}, {
 								lat : 59.440315,
 								lon : 24.747860,
 								animation : google.maps.Animation.DROP,
-                                html : "<strong><a href='https://www.airbnb.com/rooms/6923022' target='_blank'>1BR Old Town Pikk Street</a></strong><br/>Pikk 40, Tallinn",
+                                html : "<strong><a href='https://www.airbnb.com/rooms/6923022' target='_blank' onclick='ga(/'send/', /'event/', /'button/', /'click/', /'apartments:maps - Pikk/');'>1BR Old Town Pikk Street</a></strong><br/>Pikk 40, Tallinn",
 							}, {
 								lat : 59.435501, 
 								lon : 24.748579,
 								animation : google.maps.Animation.DROP,
-                                html : "<strong><a href='https://www.airbnb.com/rooms/8988450' target='_blank'>2BR Old Town Väike-Karja Street</a></strong><br/>Väike-Karja 9, Tallinn",
+                                html : "<strong><a href='https://www.airbnb.com/rooms/8988450' target='_blank' onclick='ga(/'send/', /'event/', /'button/', /'click/', /'apartments:maps - Väike-Karja/');'>2BR Old Town Väike-Karja Street</a></strong><br/>Väike-Karja 9, Tallinn",
 							}],
 							map_options : {
 								scrollwheel : false,
@@ -518,7 +518,7 @@
 
 					<h3 class="closing-shout">Have an apartment in Tallinn suitable for families?</h3>
 
-					<div class="closing-buttons" data-animation="tada"><a href="#contact-maps" class="anchor-link btn btn-lg btn-primary">Host with us</a></div>
+					<div class="closing-buttons" data-animation="tada"><a href="#contact-maps" class="anchor-link btn btn-lg btn-primary" onclick="ga('send', 'event', 'button', 'click', 'footer:Become a Host');">Become a Host</a></div>
 
 				</div>
 
